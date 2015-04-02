@@ -6,7 +6,15 @@ class LettersController < ApplicationController
   end
 
   def create
-      render plain: params[:letter].inspect
+      @letter = Letter.new(letter_params)
+
+      @letter.save
+      redirect_to @letter
+  end
+
+  private
+  def letter_params
+      params.require(:letter).permit(:title, :text)
   end
 
   def edit
