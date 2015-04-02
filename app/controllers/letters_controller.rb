@@ -6,6 +6,7 @@ class LettersController < ApplicationController
   end
 
   def create
+      render plain: params[:letter].inspect
   end
 
   def edit
