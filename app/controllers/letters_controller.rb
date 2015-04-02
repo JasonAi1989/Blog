@@ -17,10 +17,12 @@ class LettersController < ApplicationController
       params.require(:letter).permit(:title, :text)
   end
 
+  public
   def edit
   end
 
   def show
+      @letter = Letter.find(params[:id])
   end
 
   def update
