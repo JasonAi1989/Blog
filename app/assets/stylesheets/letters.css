@@ -2,3 +2,14 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+#show {
+	text-align:left;
+	width: 100;
+	border-style: outside;
+	margin-left:10cm;
+	margin-right:10cm;
+	background-color: #bbff66;
+	font-size:150%;
+}
+

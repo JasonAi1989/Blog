@@ -1,17 +1,12 @@
 <h1>Listing letters</h1>
 
-<table>
-    <tr>
-	<th>ID</th>
-        <th>Title</th>
-    </tr>
-
+<div id="show">
     <% @letters.each do |letter| %>
         <tr>
-            <td> <a href="letters/<%= letter.id%>"><%= letter.id%></a> </td>
-            <td> <a href="letters/<%= letter.id%>"><%= letter.title%></a> </td>
+            <li><span>09 Jan 2015</span> &raquo <td> <a href="letters/<%= letter.id%>"><%= letter.title%></a> </td></li>
         </tr>
     <% end %>
-</table>
+</div>
 
+</br>
 <%= link_to 'New Letter', new_letter_path%>
