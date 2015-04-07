@@ -1,14 +1,13 @@
-<h1>Letters#new</h1>
-<p>Find me in app/views/letters/new.html.erb</p>
+<h1>New Letter</h1>
 
 <%= form_for :letter, url: letters_path do |f| %>
   <p>
-      <%= f.label :title %><br>
+      <%= f.label :title %>
       <%= f.text_field :title %>
   </p>
  
   <p>
-      <%= f.label :text %><br>
+      <%= f.label :text %>
       <%= f.text_area :text %>
   </p>
    
