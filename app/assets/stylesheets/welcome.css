@@ -2,3 +2,13 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+h1 {
+    color: red;
+    background-color: gray;
+    text-align: center;
+}
+body {
+    background-color:#F0E68C; 
+    
+    text-align: center;
+}
